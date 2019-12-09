@@ -10,11 +10,10 @@
 body {
   font-family: "Open Sans";
   margin: 0 auto;
-  max-width: 1800px;
-  background-color: rgba(128, 128, 128, 0.555); }
+  max-width: 1800px; }
 
 .menu_baner {
-  background: url(image/Backgound.png) center no-repeat;
+  background: url(../image/Backgound.png) center no-repeat;
   max-height: 800px; }
 
 .body {
@@ -116,7 +115,7 @@ body {
       border: 2px solid #ffb600; }
 
 .background_skils {
-  background: url(image/background_skils.png) bottom no-repeat;
+  background: url(../image/background_skils.png) bottom no-repeat;
   min-height: 714px;
   height: 100%;
   margin: 0 auto; }
@@ -168,7 +167,7 @@ body {
       line-height: 24px; }
 
 .portfolio {
-  background: url(image/portfolio/Background_portfolio.jpg) center no-repeat;
+  background: url(../image/portfolio/Background_portfolio.jpg) center no-repeat;
   max-height: 1317px; }
   .portfolio .portfolio_head {
     color: #fff;
@@ -308,7 +307,8 @@ body {
     transition: all 0.5s ease 0s;
     position: absolute;
     top: -450px;
-    z-index: 0; }
+    z-index: 0;
+    overflow: hidden; }
     .menu .list {
       background-color: #00000098;
       -webkit-box-orient: vertical;
