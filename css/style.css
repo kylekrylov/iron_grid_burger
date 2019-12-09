@@ -208,8 +208,8 @@ body {
       .portfolio .portfolio_imgs {
         -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
-        -ms-grid-rows: (350px)[3];
-        grid-template-rows: repeat(3, 350px); } }
+        -ms-grid-rows: (270px)[3];
+        grid-template-rows: repeat(3, 270px); } }
   .portfolio .portfolio_img {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -323,7 +323,7 @@ body {
         font-size: 30px; }
   .menu.active {
     position: absolute;
-    overflow: hidden;
+    overflow: auto;
     top: 60px; }
   .burger {
     display: block;
@@ -345,7 +345,8 @@ body {
       height: 4px;
       -webkit-transition: all .1s ease 0s;
       -o-transition: all .1s ease 0s;
-      transition: all .1s ease 0s; }
+      transition: all .1s ease 0s;
+      border-radius: 3px; }
     .burger:before {
       top: 0; }
     .burger:after {
@@ -357,15 +358,15 @@ body {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
     .burger.active:before {
+      top: 8px;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
-      transform: rotate(45deg);
-      top: 8px; }
+      transform: rotate(45deg); }
     .burger.active:after {
+      bottom: 8px;
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      bottom: 8px; }
+      transform: rotate(-45deg); }
     .burger.active span {
       display: none; }
   .header_baner {
