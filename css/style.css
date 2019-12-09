@@ -34,7 +34,8 @@ body {
   .body ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    overflow: hidden; }
     .body ul li {
       list-style: none; }
       .body ul li a {

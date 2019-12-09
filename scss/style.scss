@@ -34,6 +34,7 @@ body {
     // img {}
     ul {
         display: flex;
+        overflow: hidden;
         li {
             list-style: none;
             a {
