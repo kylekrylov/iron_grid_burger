@@ -10,7 +10,8 @@
 body {
   font-family: "Open Sans";
   margin: 0 auto;
-  max-width: 1800px; }
+  max-width: 1800px;
+  background-color: rgba(128, 128, 128, 0.555); }
 
 .menu_baner {
   background: url(image/Backgound.png) center no-repeat;
