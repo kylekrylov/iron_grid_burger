@@ -31,7 +31,6 @@ body {
     height: 120px;
     ul {
         display: flex;
-        overflow: hidden;
         li {
             list-style: none;
             a {
@@ -334,7 +333,6 @@ body {
         transition: all 0.5s ease 0s;
         position: absolute;
         top: -450px;
-        z-index: 0;
         overflow: hidden;
         .list {
             background-color: #00000098;
@@ -351,8 +349,9 @@ body {
     }
     .menu.active {
         position: absolute;
-        overflow: scroll;
-        top: 50px;
+        // overflow: scroll;
+        overflow: hidden;
+        top: 60px;
     }
     .burger {
         display: block;
