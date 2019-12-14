@@ -8,14 +8,6 @@
   font: inherit;
   vertical-align: baseline; }
 
-a {
-  text-decoration: none; }
-  a:before {
-    display: block;
-    content: "";
-    height: 55px;
-    margin: -53px 0 0; }
-
 .wrapper {
   min-height: 200px;
   max-width: 1170px;
@@ -43,6 +35,8 @@ body {
   max-width: 1175px;
   margin: 0 auto;
   height: 120px; }
+  .body .logo {
+    margin: 0 20px 0; }
   .body ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -605,6 +599,13 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .social_network a {
+    text-decoration: none; }
+    .social_network a:before {
+      display: block;
+      content: "";
+      height: 55px;
+      margin: -53px 0 0; }
   .social_network div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,8 +680,7 @@ body {
     right: 0;
     height: 60px; }
     .body img {
-      height: 50px;
-      margin-right: 30px; }
+      height: 50px; }
   .menu {
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
