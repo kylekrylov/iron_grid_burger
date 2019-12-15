@@ -638,7 +638,6 @@ body {
             border: 3px solid #ffffff;
             background-color: #ffffff00;
             transition: all .5s ease 0s;
-            // transition: ;
             &:hover,
             &:focus,
             &:active {
@@ -782,13 +781,11 @@ body {
     .menu.active {
         position: absolute;
         overflow: auto;
-        // overflow: hidden;
         top: 60px;
     }
     .burger {
         display: block;
         position: relative;
-        // z-index: 1;
         width: 30px;
         height: 20px;
         padding: 0 25px;
