@@ -464,8 +464,6 @@ body {
 //!        Our Clients       //!        Our Clients   
 .our_clients {
     background: url(../image/сlients/backgroung_сlients.jpg) no-repeat center;
-    // max-height: 836px;
-    // background: rgba(0, 114, 10, 0.319);
 }
 
 .hader_our_clients {
@@ -506,7 +504,6 @@ body {
     justify-content: center;
     grid-template-columns: repeat(4, minmax(100px, 323px));
     padding-bottom: 50px;
-    // margin-bottom: 50px;
     @media (max-width: 768px) {
         grid-template-columns: repeat(3, minmax(100px, 323px));
     }
@@ -849,7 +846,7 @@ body {
     .skil {
         margin: 30px 10px 20px !important;
     }
-    //!     Awesome Portfolio     //!     Awesome Portfolio
+    //!    Awesome Portfolio     //!     Awesome Portfolio
 }
 
 @media(max-width:480px) {}
