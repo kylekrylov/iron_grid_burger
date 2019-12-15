@@ -59,7 +59,6 @@ body {
                 text-decoration: none;
                 font: outline;
                 font-size: 20px;
-                // margin-left: 15px;
                 margin-right: 15px;
                 font-weight: 800;
                 &:hover,
@@ -137,9 +136,12 @@ body {
         float: right;
         margin-top: 60px;
         margin-bottom: 80px;
+        width: 231px;
+        transition: all .5s ease 0s;
         &:hover,
         &:focus,
         &:active {
+            letter-spacing: 2px;
             color: #ffb600;
             border: 2px solid #ffb600;
         }
@@ -148,7 +150,7 @@ body {
 
 //!     Awesome Skills      //!     Awesome Skills  
 .background_skils {
-    background: url(../image/background_skils.png)bottom no-repeat;
+    background: url(../image/team/background_team_s.png) right -400px top 10% no-repeat, url(../image/background_skils.png)bottom no-repeat;
     min-height: 714px;
     height: 100%;
     margin: 0 auto;
@@ -300,9 +302,12 @@ body {
             font-size: 22px;
             display: inline-block;
             margin: 20px 0 30px;
+            width: 231px;
+            transition: all .5s ease 0s;
             &:hover,
             &:focus,
             &:active {
+                letter-spacing: 2px;
                 color: #ffb600;
                 border: 2px solid #ffb600;
             }
@@ -312,10 +317,9 @@ body {
 
 //!      team       //!      team      
 .team {
-    background: url(../image/team/Backgroung_team.jpg) center no-repeat, url(../image/team/background_team_s.png) no-repeat -500px 200px;
-    // max-height: 1028px;
+    background: url(../image/team/background_team_s.png)-500px 50% no-repeat, url(../image/team/Backgroung_team.jpg) center no-repeat;
+    // background: url(../image/team/background_team_s.png)-500px 50% no-repeat;
     //
-    // background: url(../image/team/background_team_s.png) no-repeat -500px 200px;
     // background-position: -500px 200px;
 }
 
@@ -460,7 +464,7 @@ body {
 //!        Our Clients       //!        Our Clients   
 .our_clients {
     background: url(../image/сlients/backgroung_сlients.jpg) no-repeat center;
-    max-height: 836px;
+    // max-height: 836px;
     // background: rgba(0, 114, 10, 0.319);
 }
 
@@ -501,7 +505,8 @@ body {
     align-items: center;
     justify-content: center;
     grid-template-columns: repeat(4, minmax(100px, 323px));
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    // margin-bottom: 50px;
     @media (max-width: 768px) {
         grid-template-columns: repeat(3, minmax(100px, 323px));
     }
@@ -587,6 +592,7 @@ body {
             }
         }
         input {
+            outline: none;
             color: #fff;
             box-sizing: border-box;
             padding-left: 20px;
@@ -623,6 +629,7 @@ body {
             height: 63px;
             background-color: #2e2e2e;
             color: #fff;
+            outline: none;
         }
         button {
             color: #fff;
@@ -630,6 +637,15 @@ body {
             height: 61px;
             border: 3px solid #ffffff;
             background-color: #ffffff00;
+            transition: all .5s ease 0s;
+            // transition: ;
+            &:hover,
+            &:focus,
+            &:active {
+                letter-spacing: 2px;
+                color: #ffb600;
+                border: 2px solid #ffb600;
+            }
         }
     }
 }
@@ -649,15 +665,18 @@ body {
         }
     }
     div {
+        background: #eeb501;
+        border-radius: 50%;
         display: flex;
         font-display: column;
         justify-content: center;
         align-items: center;
         height: 57px;
         width: 57px;
-        border-radius: 50%;
         margin: 11px;
-        background: #eeb501;
+        img {
+            transition: all .5s ease 0s;
+        }
         &:hover img {
             filter: invert(100%);
         }
@@ -742,18 +761,19 @@ body {
         }
     }
     .menu {
-        transition: all 0.5s ease 0s;
+        transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.15s;
         position: absolute;
         top: -450px;
         overflow: hidden;
+        width: 100%;
         .list {
             background-color: #00000098;
             flex-direction: column;
-            border-radius: 0 0 10px 0;
+            border-radius: 0 0 10px 10px;
         }
         .link {
             display: flex;
-            margin: 5px;
+            margin: 5px auto;
             a {
                 font-size: 30px;
             }

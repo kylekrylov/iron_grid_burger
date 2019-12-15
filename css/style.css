@@ -115,13 +115,18 @@ body {
     font-size: 22px;
     float: right;
     margin-top: 60px;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    width: 231px;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
     .baner_text_creative button:hover, .baner_text_creative button:focus, .baner_text_creative button:active {
+      letter-spacing: 2px;
       color: #ffb600;
       border: 2px solid #ffb600; }
 
 .background_skils {
-  background: url(../image/background_skils.png) bottom no-repeat;
+  background: url(../image/team/background_team_s.png) right -400px top 10% no-repeat, url(../image/background_skils.png) bottom no-repeat;
   min-height: 714px;
   height: 100%;
   margin: 0 auto; }
@@ -289,13 +294,18 @@ body {
       text-transform: uppercase;
       font-size: 22px;
       display: inline-block;
-      margin: 20px 0 30px; }
+      margin: 20px 0 30px;
+      width: 231px;
+      -webkit-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
       .portfolio .portfolio_button button:hover, .portfolio .portfolio_button button:focus, .portfolio .portfolio_button button:active {
+        letter-spacing: 2px;
         color: #ffb600;
         border: 2px solid #ffb600; }
 
 .team {
-  background: url(../image/team/Backgroung_team.jpg) center no-repeat, url(../image/team/background_team_s.png) no-repeat -500px 200px; }
+  background: url(../image/team/background_team_s.png)-500px 50% no-repeat, url(../image/team/Backgroung_team.jpg) center no-repeat; }
 
 .team_head {
   display: -ms-grid;
@@ -412,8 +422,7 @@ body {
     font-size: 25px; }
 
 .our_clients {
-  background: url(../image/сlients/backgroung_сlients.jpg) no-repeat center;
-  max-height: 836px; }
+  background: url(../image/сlients/backgroung_сlients.jpg) no-repeat center; }
 
 .hader_our_clients {
   color: #000;
@@ -456,7 +465,7 @@ body {
   justify-content: center;
   -ms-grid-columns: (minmax(100px, 323px))[4];
   grid-template-columns: repeat(4, minmax(100px, 323px));
-  margin-bottom: 50px; }
+  padding-bottom: 50px; }
   @media (max-width: 768px) {
     .block_our_clients {
       -ms-grid-columns: (minmax(100px, 323px))[3];
@@ -540,6 +549,7 @@ body {
         .form .n_e_p div:not(:first-child) {
           margin-left: 0; } }
   .form .n_e_p input {
+    outline: none;
     color: #fff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -580,13 +590,21 @@ body {
     width: 100%;
     height: 63px;
     background-color: #2e2e2e;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
   .form .m_b button {
     color: #fff;
     width: 171px;
     height: 61px;
     border: 3px solid #ffffff;
-    background-color: #ffffff00; }
+    background-color: #ffffff00;
+    -webkit-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s; }
+    .form .m_b button:hover, .form .m_b button:focus, .form .m_b button:active {
+      letter-spacing: 2px;
+      color: #ffb600;
+      border: 2px solid #ffb600; }
 
 .social_network {
   display: -webkit-box;
@@ -607,6 +625,8 @@ body {
       height: 55px;
       margin: -53px 0 0; }
   .social_network div {
+    background: #eeb501;
+    border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -619,9 +639,11 @@ body {
     align-items: center;
     height: 57px;
     width: 57px;
-    border-radius: 50%;
-    margin: 11px;
-    background: #eeb501; }
+    margin: 11px; }
+    .social_network div img {
+      -webkit-transition: all .5s ease 0s;
+      -o-transition: all .5s ease 0s;
+      transition: all .5s ease 0s; }
     .social_network div:hover img {
       -webkit-filter: invert(100%);
       filter: invert(100%); }
@@ -682,24 +704,25 @@ body {
     .body img {
       height: 50px; }
   .menu {
-    -webkit-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.15s;
+    -o-transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.15s;
+    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.15s;
     position: absolute;
     top: -450px;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 100%; }
     .menu .list {
       background-color: #00000098;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      border-radius: 0 0 10px 0; }
+      border-radius: 0 0 10px 10px; }
     .menu .link {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      margin: 5px; }
+      margin: 5px auto; }
       .menu .link a {
         font-size: 30px; }
   .menu.active {
